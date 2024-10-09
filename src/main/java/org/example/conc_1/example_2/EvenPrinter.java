@@ -8,5 +8,10 @@ public class EvenPrinter implements Runnable{
                 System.out.println("Even thread: " + i);
             }
         }
+        print();
+    }
+
+    public void print(){
+
     }
 }
