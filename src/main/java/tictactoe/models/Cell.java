@@ -12,7 +12,7 @@ public class Cell {
 
     public void print(){
         if(player != null){
-            System.out.print(player.getSymbol());
+            System.out.print(" " + player.getSymbol() + " ");
         }
         else {
             System.out.print(" _ ");
@@ -41,5 +41,9 @@ public class Cell {
 
     public void setPlayer(Player player) {
         this.player = player;
+    }
+
+    public boolean isEmpty(){
+        return player == null;
     }
 }

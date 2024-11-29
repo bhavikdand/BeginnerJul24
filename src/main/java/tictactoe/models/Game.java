@@ -56,7 +56,7 @@ public class Game {
 
     public void makeMove() {
         Player player = players.get(currentPlayerIdx);
-        Pair<Integer, Integer> pair = player.makeMove();
+        Pair<Integer, Integer> pair = player.makeMove(this.board);
         // Validate if the cell is empty or not
         this.board.setPlayer(pair.getKey(), pair.getValue(), player);
         Move move = new Move(player, this.board.getCell(pair.getKey(), pair.getValue()));

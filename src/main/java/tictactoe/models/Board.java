@@ -35,4 +35,8 @@ public class Board {
     public Cell getCell(int x, int y){
         return this.grid.get(x).get(y);
     }
+
+    public List<List<Cell>> getGrid() {
+        return grid;
+    }
 }
